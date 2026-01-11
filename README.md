@@ -1,8 +1,10 @@
 
 
 # 🎧 Podcasts App
-
 A modular iOS application built with SwiftUI, Combine, Dependency Injection, and Clean Architecture, designed for scalability, testability, and long-term maintainability.
+
+
+https://github.com/user-attachments/assets/c5218ee4-769c-4eea-8118-c0658bc9a72c
 
 # Project Summary 
 This project aims to demonstrate how to build a scalable, modular iOS application using a clean and maintainable architecture. The app is built with SwiftUI and Combine, following modern iOS development best practices.
