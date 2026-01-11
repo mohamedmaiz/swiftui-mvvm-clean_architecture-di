@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		E30E827B2F098C9500833290 /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = E30E827A2F098C9500833290 /* Core */; };
+		E30E837B2F0DC8CC00833290 /* Podcasts in Frameworks */ = {isa = PBXBuildFile; productRef = E30E837A2F0DC8CC00833290 /* Podcasts */; };
+		E30E84762F11A2E100833290 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = E30E84752F11A2E100833290 /* Kingfisher */; };
+		E3945B8F2F12E6FA00F85A79 /* PodcastDetails in Frameworks */ = {isa = PBXBuildFile; productRef = E3945B8E2F12E6FA00F85A79 /* PodcastDetails */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		E3610DA02F0883D7008B4F07 /* swiftui-mvvm-clean_architecture-di.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swiftui-mvvm-clean_architecture-di.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,16 +30,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E30E84762F11A2E100833290 /* Kingfisher in Frameworks */,
+				E30E827B2F098C9500833290 /* Core in Frameworks */,
+				E3945B8F2F12E6FA00F85A79 /* PodcastDetails in Frameworks */,
+				E30E837B2F0DC8CC00833290 /* Podcasts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E30E82792F098C9500833290 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E3610D972F0883D7008B4F07 = {
 			isa = PBXGroup;
 			children = (
 				E3610DA22F0883D7008B4F07 /* swiftui-mvvm-clean_architecture-di */,
+				E30E82792F098C9500833290 /* Frameworks */,
 				E3610DA12F0883D7008B4F07 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,6 +84,10 @@
 			);
 			name = "swiftui-mvvm-clean_architecture-di";
 			packageProductDependencies = (
+				E30E827A2F098C9500833290 /* Core */,
+				E30E837A2F0DC8CC00833290 /* Podcasts */,
+				E30E84752F11A2E100833290 /* Kingfisher */,
+				E3945B8E2F12E6FA00F85A79 /* PodcastDetails */,
 			);
 			productName = "swiftui-mvvm-clean_architecture-di";
 			productReference = E3610DA02F0883D7008B4F07 /* swiftui-mvvm-clean_architecture-di.app */;
@@ -94,6 +117,10 @@
 			);
 			mainGroup = E3610D972F0883D7008B4F07;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				E30E84742F11A2E100833290 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				E30E84C62F12E69B00833290 /* XCLocalSwiftPackageReference "swiftui-mvvm-clean_architecture-di/PodcastDetails" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = E3610DA12F0883D7008B4F07 /* Products */;
 			projectDirPath = "";
@@ -251,7 +278,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"swiftui-mvvm-clean_architecture-di/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"swiftui-mvvm-clean_architecture-di/Resources/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -279,7 +306,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"swiftui-mvvm-clean_architecture-di/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"swiftui-mvvm-clean_architecture-di/Resources/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -322,6 +349,44 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		E30E84C62F12E69B00833290 /* XCLocalSwiftPackageReference "swiftui-mvvm-clean_architecture-di/PodcastDetails" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "swiftui-mvvm-clean_architecture-di/PodcastDetails";
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E30E84742F11A2E100833290 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.6.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E30E827A2F098C9500833290 /* Core */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Core;
+		};
+		E30E837A2F0DC8CC00833290 /* Podcasts */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Podcasts;
+		};
+		E30E84752F11A2E100833290 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E30E84742F11A2E100833290 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		E3945B8E2F12E6FA00F85A79 /* PodcastDetails */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PodcastDetails;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E3610D982F0883D7008B4F07 /* Project object */;
 }
