@@ -49,6 +49,7 @@ private extension PodcastsViewModel {
                 podcastsUseCase.fetchTedTalksPodcasts()
             )
             .receive(on: DispatchQueue.main)
+            .delay(for: .seconds(2), scheduler: DispatchQueue.main)
             .sink(receiveCompletion: {[weak self] completion in
                 switch completion {
                 case .finished :
